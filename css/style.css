@@ -11,6 +11,9 @@ img{
     max-width: 100%;
 }
 
+ul{
+    list-style-type: none;
+}
 /*Header*/
 
 header{
@@ -37,18 +40,26 @@ main{
     background-image:url(../img/sidebar-bg.png);
     width: 100px;
     flex-shrink: 0;
+    background-color: #051E34;
 }
 
 .icon-menu{
     height:calc(100% - 100px);
-    background-color: green;
 }
 
+.side-bar a{
+    color:white;
+    text-decoration: none;
+}
 .settings{
     height: 100px;
-    background-color: brown;
 }
 
+@media screen and (min-width:992px){
+    .side-bar{
+        width:150px;
+    }
+}
 
 /* header-main*/
 
