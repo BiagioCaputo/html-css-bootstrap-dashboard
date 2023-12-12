@@ -79,10 +79,16 @@ main{
 
 /*main-content*/
 
-p{
-    font-size: 80px;
-}
-
 .main-box{
     max-height: 100%;
+}
+
+
+.card{
+    min-width: 100%;
+}
+
+.container-card{
+    margin:15px;
+    border:1px solid lightgray;
 }
