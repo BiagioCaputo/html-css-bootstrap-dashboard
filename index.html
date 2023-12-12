@@ -9,14 +9,26 @@
     <title>Bootstrap-dashboard</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid d-flex">
+              <div class="icon-box"> 
+                <img src="img/mobile-logo.png" alt="logo">
+              </div>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 flex-grow-1" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
     
     <main class="d-flex">
 
 
 
         <div class="side-bar text-white">
-            <div class="icon-menu pt-4">
+            <div class="icon-menu pt-5">
                 <ul class="icon-list d-flex align-items-center justify-content-center flex-wrap row-gap-4">
                     <li class="col-12 d-flex gap-3 align-items-center mb-4 mb-lg-0">
                         <i class="fa-solid fa-house fa-xl"></i><a href="#" class="icon-text d-none d-lg-block">Home</a>
@@ -40,15 +52,53 @@
 
 
         <div class="main-box flex-grow-1 overflow-auto">
-            <div class="header-main container-fluid bg-primary overflow-hidden">
+
+
+            <div class="header-main container-fluid bg-primary text-white py-5">
+                <div class="row row-gap-4 flex-column flex-md-row align-items-center justify-content-lg-between">
+
+                    <div class="col d-flex gap-3 align-items-center order-md-last col-lg-3">
+                        <h3 class="fw-light">Nuovo studente</h3>
+                        <button>+</button>
+                    </div>
+
+                    <div class="col order-md-first col-lg-5">
+                        <div class="upper-col-header-main d-flex align-items-center gap-3">
+                            <h1>Boolean</h1>  
+                            <span class="blu-border">Piano blaze</span>
+                        </div>
+                        <div class="bottom-col-header-main d-flex align-items-center gap-2">
+                            <span class="blu-border">3 app</span>
+                            <i class="fa-solid fa-angles-right"></i>
+                            <span class="blu-border d-lg-none">+</span>
+                            <span class="blu-border d-none d-lg-block">Boolean mobile app</span>
+                            <span class="blu-border d-none d-lg-block">Boolean web app</span>
+                            <span class="blu-border d-none d-lg-block">Boolean blog app</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col col-lg-4">
+                        <h3 class="fw-light">Studenti online negli ultimi 30 minuti</h3>
+                        <h4 class="fs-1 fw-medium">125</h4>
+                    </div>
+
+                </div>
 
             </div>
+
+
+
+
+
             <div class="main-content container-fluid">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed pariatur ratione natus! Dolorum eum magnam facilis maiores reiciendis quae, asperiores cum nemo amet nostrum laboriosam aliquid odit, totam vel incidunt?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur officia veniam, perferendis consequatur totam, facere asperiores sequi incidunt ad voluptatum amet nisi recusandae quo, vero corrupti delectus quae explicabo animi!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, officiis, quibusdam dolore praesentium commodi, nihil repellat labore aperiam accusantium ratione totam blanditiis? Quibusdam animi nihil accusantium temporibus officia nobis reprehenderit?
-                </p>
+                
             </div>
+
+
+
+
+
         </div>
 
     </main>

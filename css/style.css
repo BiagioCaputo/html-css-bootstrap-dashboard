@@ -18,13 +18,16 @@ ul{
 
 header{
     height: 100px;
-    background-color: blueviolet;
 
     position: sticky;
     top:0;
     right:0;
     left:0;
 
+}
+
+.icon-box{
+    max-width: 85px;
 }
 
 
@@ -65,6 +68,13 @@ main{
 
 .header-main{
     min-height: 150px;
+}
+
+.blu-border{
+    background-color: #165BBA;
+    padding:5px 10px;
+    border-radius: 20px;
+
 }
 
 /*main-content*/
