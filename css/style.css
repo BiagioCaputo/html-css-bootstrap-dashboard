@@ -57,6 +57,7 @@ header{
     height: 50px;
 }
 
+
 /* **************** MAIN **************** */
 
 .wrapper{
@@ -103,6 +104,15 @@ header{
 
 }
 
+.offcanvas{
+    --bs-offcanvas-width: 100%;
+}
+
+@media screen and (min-width:992px){
+    .offcanvas{
+        --bs-offcanvas-width: 50%;
+    }
+}
 /*main*/
 
 main{
