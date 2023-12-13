@@ -97,25 +97,25 @@
         <main class="flex-grow-1 overflow-auto">
 
             <!--Header del main-->
-            <div class="header-main bg-primary text-white p-5">
-                <div class="row row-gap-4 flex-column flex-md-row align-items-center justify-content-lg-between">
+            <div class="header-main bg-primary text-white py-5 px-2">
+                <div class="d-flex row-gap-4 flex-column flex-md-row gap-md-4 justify-content-lg-between">
 
-                    <div class="col d-flex gap-3 align-items-center order-md-last col-lg-3">
-                        <h3 class="fw-light">Nuovo studente</h3>
-                        <button class="btn btn-primary border border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                    <div class="d-flex gap-3 align-items-center order-md-last">
+                        <h3 class="fw-light fs-5">Nuovo studente</h3>
+                        <button class="cs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
                         <!--Offecanvas-->
 
                         <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <button type="button" class=".cs-btn btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
 
                                 <div class="name-surname-box d-lg-flex gap-2 mb-3">
                                     <div class="col-12 col-lg-6">
-                                        <label for="cognome" class="form-label">Nome</label>
+                                        <label for="cognome" class="form-label">Nome</label>   
                                         <input type="text" class="form-control" aria-label="name" aria-describedby="basic-addon1">
                                     </div>
                                     <div class="col-12 col-lg-6">
@@ -199,7 +199,7 @@
                         </div>
                     </div>    <!--Termine offcanvas-->
 
-                    <div class="col order-md-first col-lg-5">
+                    <div class="order-md-first">
                         <div class="upper-col-header-main d-flex align-items-center gap-3">
                             <h1>Boolean</h1>
                             <span class="blu-border">Piano blaze</span>
@@ -215,8 +215,8 @@
                     </div>
 
 
-                    <div class="col col-lg-4">
-                        <h3 class="fw-light">Studenti online negli ultimi 30 minuti</h3>
+                    <div class="">
+                        <h3 class="fw-light fs-4">Studenti online negli ultimi 30 minuti</h3>
                         <h4 class="fs-1 fw-medium">125</h4>
                     </div>
 
