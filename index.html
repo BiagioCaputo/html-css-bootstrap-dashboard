@@ -9,16 +9,46 @@
     <title>Bootstrap-dashboard</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid d-flex">
-              <div class="icon-box"> 
-                <img src="img/mobile-logo.png" alt="logo">
-              </div>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2 flex-grow-1" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+    <header class="d-flex align-items-center">
+        <nav class="navbar bg-white col-12">
+            <div class="container-fluid d-flex gap-lg-4">
+                
+                <!--Icona mobile e desktop-->
+                <div class="icon-box-mobile d-lg-none col-2"> <img src="img/mobile-logo.png" alt="logo mobile"></div>
+
+                <div class="icon-box d-none d-lg-block"><img src="img/logo.svg" alt="logo"></div>
+
+                <!--Searchbar-->
+
+                <form class="d-flex col-9  bg-secondary-subtle rounded-1" role="search">
+                    <button class="btn bg-secondary-subtle me-1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="form-control bg-secondary-subtle" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                </form>
+
+
+                 <!--Nav ul-->
+                
+                <div class="col-1">
+                    <ul class="ul-navbar-icon d-flex gap-3 mb-0 ps-0 ">
+                        <li class="navbar-icon d-none d-lg-block"><i class="fa-solid fa-list" style="color:#5B5858;"></i></li>
+                        <li class="navbar-icon d-none d-lg-block"><i class="fa-solid fa-circle-question" style="color:#5B5858;"></i></li>
+                        <li class="navbar-icon d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical" style="color:#5B5858;"></i></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell" style="color: #ff8e00;"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
           </nav>
     </header>
@@ -98,36 +128,128 @@
                         <div class="row flex-column row-gap-4">
                             <div class="col">
                                 <div class="card">
-                                    <div class="card-header">Prossime classi</div>
-                                    <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+                                    <div class="card-header fw-medium fs-3">Prossime classi</div>
+                                    <div class="table-box p-4">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col"><span class="d-none d-md-block">Data inizio</span></th>
+                                                <th scope="col"><span class="d-none d-md-block">ROI</span></th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">75</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">15 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-success">Done</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">76</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">16 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-success">Done</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">77</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">17 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-warning">Process</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">78</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">18 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-success">Done</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">79</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">19 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-danger">Failed</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">80</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">20 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-success">Done</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">81</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">21 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-danger">Failed</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">
+                                                    <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                        <img src="img/class-avatar.jpg">
+                                                        <h5 class="fw-medium fs-5">Classe</h5>
+                                                        <h5 class="fw-medium fs-5">82</h5>
+                                                    </div>
+                                                </th>
+                                                <td><span class="d-none d-md-block">22 Feb 2021</span></td>
+                                                <td><span class="d-none d-md-block">20%</span></td>
+                                                <td><span class="result bg-success">Done</span></td>
+                                                <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
+                                              </tr>
+                                      
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                    
                                 </div>
 
                             </div>
