@@ -14,7 +14,7 @@ ul{
     background-color: white;
 }
 
-/*Header*/
+/*Header of the page*/
 
 header{
     height: 100px;
@@ -57,8 +57,7 @@ header{
     height: 50px;
 }
 
-
-/* **************** MAIN **************** */
+/*wrapper*/
 
 .wrapper{
     height: calc(100vh - 100px);
@@ -113,6 +112,8 @@ header{
         --bs-offcanvas-width: 50%;
     }
 }
+
+
 /*main*/
 
 main{
