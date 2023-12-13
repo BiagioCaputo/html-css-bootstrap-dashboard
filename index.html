@@ -85,7 +85,7 @@
                 </ul>
             </div>
             <div class="settings d-flex justify-content-center align-items-center gap-2">
-                <i class="fa-solid fa-gear fa-xl"></i><a href="#" class="icon-text d-none d-lg-block">Admin</a></li>
+                <i class="fa-solid fa-gear fa-xl"></i><a href="#" class="icon-text d-none d-lg-block">Admin</a>
             </div>
         </div>
 
@@ -115,12 +115,12 @@
 
                                 <div class="name-surname-box d-lg-flex gap-2 mb-3">
                                     <div class="col-12 col-lg-6">
-                                        <label for="cognome" class="form-label">Nome</label>   
-                                        <input type="text" class="form-control" aria-label="name" aria-describedby="basic-addon1">
+                                        <label for="name" class="form-label">Nome</label>   
+                                        <input type="text" class="form-control" id="name">
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <label for="cognome" class="form-label">Cognome</label>
-                                        <input type="text" class="form-control" aria-label="cognome" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" id="cognome">
                                     </div>
                                 </div>
 
@@ -129,42 +129,42 @@
                                         <label for="email" class="form-label">Email</label>
                                         <div class="input-group">
                                             <span class="input-group-text" id="basic-addon1">@</span>
-                                            <input type="text" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                                            <input type="text" class="form-control" id="email">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <label for="password" class="form-label">Password</label>
-                                        <input type="text" class="form-control" aria-label="password" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" id="password">
                                     </div>
                                 </div>
 
                                 <div class="email2-password-box d-lg-flex gap-2 mb-3">
                                     <div class="col-12 col-lg-6">
-                                        <label for="email" class="form-label">Indirizzo Email</label>
+                                        <label for="email2" class="form-label">Indirizzo Email</label>
                                         <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                            <input type="text" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                                            <span class="input-group-text" id="basic-addon2">@</span>
+                                            <input type="text" class="form-control" id="email2">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <label for="password" class="form-label">Password</label>
-                                        <input type="text" class="form-control" aria-label="password" aria-describedby="basic-addon1">
+                                        <label for="password2" class="form-label">Password</label>
+                                        <input type="text" class="form-control" id="password2">
                                     </div>
                                 </div>
 
                                 <div class="address-box mb-3">
                                     <label for="indirizzo" class="form-label">Indirizzo</label>
-                                    <input type="text" class="form-control" aria-label="indirizzo" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" id="indirizzo">
                                 </div>
 
                                 <div class="city-box d-lg-flex gap-2 mb-3">
                                     <div class="col-12 col-lg-6">
                                         <label for="città" class="form-label">Città</label>
-                                        <input type="text" class="form-control" aria-label="città" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" id="città">
                                     </div>
                                     <div class="col-12 col-lg-4">
-                                        <label for="inputGroupSelect01" class="form-label">Stato</label>
-                                        <select class="form-select" id="inputGroupSelect01">
+                                        <label for="stato" class="form-label">Stato</label>
+                                        <select class="form-select" id="stato">
                                             <option selected>Scegli...</option>
                                             <option value="1">Italia</option>
                                             <option value="2">Italia</option>
@@ -173,13 +173,13 @@
                                     </div>
                                     <div class="w-col-12 col-lg-2">
                                         <label for="cap" class="form-label">CAP</label>
-                                        <input type="text" class="form-control" aria-label="cap" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" aria-label="cap" id="cap">
                                     </div>
                                 </div>
 
                                 <div class="photo-box mb-3">
-                                    <label for="inputGroupFile04" class="form-label">Foto</label>
-                                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    <label for="file" class="form-label">Foto</label>
+                                    <input type="file" class="form-control" id="file" aria-label="Upload">
                                 </div>
 
                                 <div class="confirm-box mb-3">
@@ -234,7 +234,7 @@
                     <div class="col col-12 col-lg-8">
                         <div class="card mb-3">
                             <div class="card-header fw-medium fs-3">Prossime classi</div>
-                            <div class="table-box p-4">
+                            <div class="table-box p-3">
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -248,123 +248,113 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">
-                                                <div
-                                                    class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">75</h5>
+                                                <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">75</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">15 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-success">Done</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">
-                                                <div
-                                                    class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">76</h5>
+                                                <div class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">76</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">16 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-success">Done</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">
                                                 <div
                                                     class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">77</h5>
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">77</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">17 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-warning">Process</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">
                                                 <div
                                                     class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">78</h5>
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">78</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">18 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-success">Done</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">
                                                 <div
                                                     class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">79</h5>
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">79</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">19 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-danger">Failed</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">
                                                 <div
                                                     class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">80</h5>
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">80</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">20 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-success">Done</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">
                                                 <div
                                                     class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">81</h5>
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">81</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">21 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-danger">Failed</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">
                                                 <div
                                                     class="class-box d-flex flex-column flex-wrap flex-md-row align-items-md-center gap-md-2">
-                                                    <img src="img/class-avatar.jpg">
-                                                    <h5 class="fw-medium fs-5">Classe</h5>
-                                                    <h5 class="fw-medium fs-5">82</h5>
+                                                    <img src="img/class-avatar.jpg" alt="avatar classe">
+                                                    <span class="fw-medium fs-5">Classe</span>
+                                                    <span class="fw-medium fs-5">82</span>
                                                 </div>
                                             </th>
                                             <td><span class="d-none d-md-block">22 Feb 2021</span></td>
                                             <td><span class="d-none d-md-block">20%</span></td>
                                             <td><span class="result bg-success">Done</span></td>
-                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i
-                                                        class="fa-solid fa-trash"></i></span></td>
+                                            <td><span class="modify-icon"><i class="fa-solid fa-pen me-2"></i><i class="fa-solid fa-trash"></i></span></td>
                                         </tr>
 
                                     </tbody>
